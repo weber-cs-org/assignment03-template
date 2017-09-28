@@ -1,0 +1,48 @@
+{
+  "course_name": "WEB 4350",
+  "course_id": "443882",
+  "assignment_name": "Assignment 03",
+  "assignment_id": "3600525",
+  "students": [
+    {
+      "id": "1626444",
+      "name": "Blaine Callahan",
+      "github_username": "Amarantz"
+    },
+    {
+      "id": "1628874",
+      "name": "Kyle Eastman",
+      "github_username": "Xero67"
+    },
+    {
+      "id": "1600275",
+      "name": "Blake Freeman",
+      "github_username": "blakeCs4790"
+    },
+    {
+      "id": "1685208",
+      "name": "James Larson",
+      "github_username": "MitchLarz"
+    },
+    {
+      "id": "339333",
+      "name": "Brieanna Miller",
+      "github_username": "brieanna"
+    },
+    {
+      "id": "1692430",
+      "name": "Rizwan Mohammed",
+      "github_username": "Ryden7"
+    },
+    {
+      "id": "1608078",
+      "name": "Parker Smith",
+      "github_username": "divsmith"
+    },
+    {
+      "id": "11108",
+      "name": "Tyler Toponce",
+      "github_username": "ttoponce"
+    }
+  ]
+}

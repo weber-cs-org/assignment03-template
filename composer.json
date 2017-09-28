@@ -1,0 +1,65 @@
+{
+    "name": "weber-web4350/assignment03-answers",
+    "description": "A pre-configured skeleton for the Silex microframework",
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.0.0",
+        "silex/silex": "~2.0",
+        "silex/web-profiler": "~2.0",
+        "symfony/asset": "~2.8|^3.0",
+        "symfony/browser-kit": "~2.8|^3.0",
+        "symfony/class-loader": "~2.8|^3.0",
+        "symfony/config": "~2.8|^3.0",
+        "symfony/console": "~2.8|^3.0",
+        "symfony/css-selector": "~2.8|^3.0",
+        "symfony/debug": "~2.8|^3.0",
+        "symfony/finder": "~2.8|^3.0",
+        "symfony/form": "~2.8|^3.0",
+        "symfony/monolog-bridge": "~2.8|^3.0",
+        "symfony/process": "~2.8|^3.0",
+        "symfony/security": "~2.8|^3.0",
+        "symfony/translation": "~2.8|^3.0",
+        "symfony/twig-bridge": "~2.8|^3.0",
+        "symfony/validator": "~2.8|^3.0",
+        "symfony/yaml": "^3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3",
+        "phpunit/php-invoker": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Assignment\\": "src"
+        }
+    },
+    "scripts": {
+        "clean": [
+            "rm -fr ./vendor",
+            "rm -f grade.xml",
+            "composer clean-cache"
+        ],
+        "clean-cache": [
+            "rm -fr ./var/cache/logs",
+            "rm -fr ./var/cache/profiler",
+            "rm -fr ./var/cache/twig"
+        ],
+        "grade": [
+            "composer clean-cache",
+            "vendor/bin/phpunit --log-junit grade.xml"
+        ],
+        "push": [
+            "git add .",
+            "git commit -m 'Updated assignment'",
+            "git push origin"
+        ],
+        "run": [
+            "composer clean-cache",
+            "echo 'Started web server on http://localhost:8888'",
+            "php -S localhost:8888 -t web"
+        ],
+        "test": [
+            "vendor/bin/phpunit"
+        ]
+    }
+}
